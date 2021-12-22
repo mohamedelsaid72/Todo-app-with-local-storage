@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Todo App with Multi Language" />
+    <meta name="author" content="Mohamed Elsayed" />
+    <meta name="theme-color" content="#2e3135" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/icon.png"
+      type="image/x-icon"
+    />
+    <title>TodoDaily</title>
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div class="loader">
+      <h2 class="title"><i class="fas fa-clock"></i> TodoDaily</h2>
+    </div>
+    <!-- Loader -->
+    <!-- Todo App -->
+    <main class="todo">
+      <div class="container">
+        <div class="title-container">
+          <h1 class="title"><i class="fas fa-clock"></i>TodoDaily</h1>
+          <div class="lang-mode-container">
+            <a class="switch-lang" style="direction: rtl" href="./indexAR.html"
+              ><i class="fas fa-globe"></i> AR</a
+            >
+            <button id="switch" class="switch-mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+        <p class="alert"></p>
+        <form autocomplete="off" class="todo-form">
+          <input id="task" type="text" placeholder="e.g. Go Shopping" />
+          <button type="submit" class="submit-btn">
+            <i class="fas fa-plus"></i>
+          </button>
+        </form>
+        <div class="task-container-default show">
+          <div class="default-text">
+            <p><i class="fas fa-tasks"></i>You have no tasks yet</p>
+          </div>
+        </div>
+        <div class="tasks-container">
+          <p class="task-title">Your Tasks</p>
+          <div class="tasks-list"></div>
+          <!-- button -->
+          <button type="button" class="clear-btn">Clear List</button>
+        </div>
+      </div>
+    </main>
+    <!-- TodoApp -->
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <h4 class="title"><i class="fas fa-clock"></i>TodoDaily</h4>
+        <p class="rights">All Rights Reserved ©2021</p>
+      </div>
+    </footer>
+    <!-- footer -->
+    <!-- Script File -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
