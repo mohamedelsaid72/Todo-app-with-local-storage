@@ -317,30 +317,6 @@ p {
 }
 /* Todo App */
 
-/* Footer */
-/* footer {
-  position: relative;
-  height: 10vh;
-  width: 100%;
-  background-color: var(--global-white-color);
-  padding: 20px;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
-}
-footer .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 20px;
-}
-footer .container h4 i {
-  padding: 8px;
-}
-footer .container p {
-  color: var(--global-color-primary);
-} */
-/* Footer */
-
 /* Page 404 */
 .page404 .todo .container .NotFound {
   position: relative;
