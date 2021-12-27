@@ -16,9 +16,13 @@ html[data-theme="light"] {
 }
 body {
   position: relative;
+  height: 100vh;
   font-family: "Poppins", sans-serif;
   background-color: var(--global-body-bgCcolor);
   overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0;
 }
 
 a {
@@ -87,7 +91,50 @@ p {
 }
 /* Loader */
 
+/* Home screencontainer */
+.home-screen-container {
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  left: 0;
+  top: calc(100vh - 74px);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--global-white-color);
+  padding: 18px 10px;
+}
+.home-screen-container .add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-screen-container .add button {
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--global-color-primary);
+  border: none;
+  font-size: 16px;
+}
+.home-screen-container .close-home {
+  cursor: pointer;
+  margin: 0 20px;
+}
+.home-screen-container .close-home i {
+  color: var(--global-color-primary);
+}
+/* Home screencontainer */
+
 /* Todo App */
+.todo-scroll {
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+}
+.todo-scroll::-webkit-scrollbar {
+  width: 0;
+}
 .todo {
   position: relative;
   top: 0;
@@ -274,8 +321,6 @@ p {
 footer {
   position: relative;
   height: 10vh;
-  bottom: 0;
-  left: 0;
   width: 100%;
   background-color: var(--global-white-color);
   padding: 20px;

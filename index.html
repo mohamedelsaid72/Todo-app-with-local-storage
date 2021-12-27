@@ -37,48 +37,61 @@
       <h2 class="title"><i class="fas fa-clock"></i> TodoDaily</h2>
     </div>
     <!-- Loader -->
-    <!-- Todo App -->
-    <main class="todo">
-      <div class="container">
-        <div class="title-container">
-          <h1 class="title"><i class="fas fa-clock"></i>TodoDaily</h1>
-          <div class="lang-mode-container">
-            <a class="switch-lang" style="direction: rtl" href="./AR.html"
-              ><i class="fas fa-globe"></i> AR</a
-            >
-            <button id="switch" class="switch-mode">
-              <i class="fas fa-moon"></i>
-            </button>
-          </div>
-        </div>
-        <p class="alert"></p>
-        <form autocomplete="off" class="todo-form">
-          <input id="task" type="text" placeholder="e.g. Go Shopping" />
-          <button type="submit" class="submit-btn">
-            <i class="fas fa-plus"></i>
-          </button>
-        </form>
-        <div class="task-container-default show">
-          <div class="default-text">
-            <p><i class="fas fa-tasks"></i>You have no tasks yet</p>
-          </div>
-        </div>
-        <div class="tasks-container">
-          <p class="task-title">Your Tasks</p>
-          <div class="tasks-list"></div>
-          <!-- button -->
-          <button type="button" class="clear-btn">Clear List</button>
-        </div>
+    <!-- Home screen btn -->
+    <div class="home-screen-container">
+      <div class="add">
+        <p class="title">
+          <i class="fas fa-clock"></i>
+        </p>
+        <button class="addToHome">Add to home screen</button>
       </div>
-    </main>
+      <div class="close-home"><i class="fas fa-times"></i></div>
+    </div>
+    <!-- Home screen btn -->
+    <!-- Todo App -->
+    <div class="todo-scroll">
+      <main class="todo">
+        <div class="container">
+          <div class="title-container">
+            <h1 class="title"><i class="fas fa-clock"></i>TodoDaily</h1>
+            <div class="lang-mode-container">
+              <a class="switch-lang" style="direction: rtl" href="./AR.html"
+                ><i class="fas fa-globe"></i> AR</a
+              >
+              <button id="switch" class="switch-mode">
+                <i class="fas fa-moon"></i>
+              </button>
+            </div>
+          </div>
+          <p class="alert"></p>
+          <form autocomplete="off" class="todo-form">
+            <input id="task" type="text" placeholder="e.g. Go Shopping" />
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-plus"></i>
+            </button>
+          </form>
+          <div class="task-container-default show">
+            <div class="default-text">
+              <p><i class="fas fa-tasks"></i>You have no tasks yet</p>
+            </div>
+          </div>
+          <div class="tasks-container">
+            <p class="task-title">Your Tasks</p>
+            <div class="tasks-list"></div>
+            <!-- button -->
+            <button type="button" class="clear-btn">Clear List</button>
+          </div>
+        </div>
+      </main>
+    </div>
     <!-- TodoApp -->
     <!-- footer -->
-    <footer>
+    <!-- <footer>
       <div class="container">
         <h4 class="title"><i class="fas fa-clock"></i>TodoDaily</h4>
         <p class="rights">All Rights Reserved ©2021</p>
       </div>
-    </footer>
+    </footer> -->
     <!-- footer -->
     <!-- Script Files -->
     <script src="./assets/js/app.js"></script>
