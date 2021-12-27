@@ -243,13 +243,3 @@ switchBtn.addEventListener("click", () => {
     changeThemeToLight();
   }
 });
-
-// Add to home screen
-let addToHome = document.querySelector(".addToHome"),
-  closeHome = document.querySelector(".close-home");
-// addToHome.addEventListener("click", () => {});
-
-closeHome.addEventListener("click", () => {
-  let addContainer = document.querySelector(".home-screen-container");
-  addContainer.style.display = "none";
-});
