@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  -ms-content-zooming: none;
 }
 html[data-theme="light"] {
   --global-white-color: #fff;
@@ -381,3 +382,13 @@ html[data-theme="dark"] {
   --global-color-primary: #7f94f8;
 }
 /* Dark Mode */
+
+@media screen and (min-color-index: 0) and(-webkit-min-device-pixel-ratio:0) {
+  @media {
+    html[data-theme="dark"] {
+      --global-white-color: #2e3135;
+      --global-body-bgCcolor: #282a30;
+      --global-color-primary: #7f94f8;
+    }
+  }
+}
